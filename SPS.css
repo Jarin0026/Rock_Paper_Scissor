@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(186, 210, 248);;
+}
+
+.backBtn a i{
+    font-size: 40px;  
+}
+.selections{
+    display: flex;
+    justify-content: center;
+}
+
+.selection{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 8rem;
+    transition: 100ms;
+}
+
+.selection:hover{
+    transform: scale(1.2);
+}
+
+.result{
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.result-score{
+    color: red;
+    font-size: 50px;
+}
+
+.result_selection{
+    opacity: .7;
+}
+
+.result_selection.winner{
+    opacity: 1;
+    font-size: 3rem;
+}
+
+@media(max-width:600px){
+    .selection{
+        font-size: 4rem;
+    }
+    .result{
+        font-size: 1.5rem;
+    }
+    .result-score{
+        font-size: 30px;
+    }
+    .result_selection.winner{
+        font-size: 2rem;
+    }
+    .result-score{
+        font-size: 40px;
+    }
+    .backBtn a i{
+        font-size: 30px;
+    }
+}
